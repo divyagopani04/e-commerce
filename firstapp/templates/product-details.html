@@ -1,0 +1,509 @@
+{% load static %}
+{% include 'header1.html' %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from gramentheme.com/html/addina/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 03:00:42 GMT -->
+<style>
+   .stars {
+       display: inline-block;
+       font-size: 20px; /* Adjust as needed */
+       color: gold;
+   }
+
+   .rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  /* color: #aaa; */
+  color: #aaa;
+}
+
+.rating label:before {
+  content: '★';
+  margin-right: 5px;
+}
+
+.rating input:checked ~ label {
+  color: #f90;
+}
+
+.rating input:checked ~ label:before {
+  color: #f90;
+}
+
+</style>
+<body>
+
+   <!-- preloader start -->
+   <div id="preloader">
+      <div class="bd-loader-inner">
+         <div class="bd-loader">
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+         </div>
+      </div>
+   </div>
+   <!-- preloader start -->
+
+   <!-- Back to top start -->
+   <div class="backtotop-wrap cursor-pointer">
+      <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- search area start -->
+   <div class="df-search-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="df-search-form">
+                  <div class="df-search-close text-center mb-20">
+                     <button class="df-search-close-btn df-search-close-btn"></button>
+                  </div>
+                  <form action="#">
+                     <div class="df-search-input mb-10">
+                        <input type="text" placeholder="Search for product...">
+                        <button type="submit"><i class="flaticon-search-1"></i></button>
+                     </div>
+                     <div class="df-search-category">
+                        <span>Search by : </span>
+                        <a href="#">Healthline, </a>
+                        <a href="#">COVID-19, </a>
+                        <a href="#">Surgery, </a>
+                        <a href="#">Surgeon, </a>
+                        <a href="#">Medical research</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- search area end -->
+
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="/">
+                        <img src="{% static 'assets/imgs/furniture/logo/logo-light.svg' %}" alt="logo not found">
+                     </a>
+                  </div>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="offcanvas__search mb-25">
+                  <form action="#">
+                     <input type="text" placeholder="What are you searching for?">
+                     <button type="submit"><i class="far fa-search"></i></button>
+                  </form>
+               </div>
+               <div class="mobile-menu fix mb-40"></div>
+               <div class="offcanvas__contact mt-30 mb-20">
+                  <h4>Contact Info</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank"
+                              href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A,
+                              Mirnada City Tower, NYC</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+088889797697">+088889797697</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+012-345-6789"><span class="mailto:support@mail.com">support@mail.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+  
+   <!-- Body main wrapper start -->
+   <main>
+
+      <!-- Breadcrumb area start  -->
+      <div class="breadcrumb__area theme-bg-1 p-relative z-index-11 pt-95 pb-95">
+         <div class="breadcrumb__thumb" data-background="assets/imgs/bg/breadcrumb-bg-furniture.jpg"></div>
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__wrapper text-center">
+                     <h2 class="breadcrumb__title">Product Details</h2>
+                     <div class="breadcrumb__menu">
+                        <nav>
+                           <ul>
+                              <li><span><a href="/">Home</a></span></li>
+                              <li><span>Product Details</span></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Breadcrumb area start  -->
+
+      <!-- Product details area start -->
+      <div class="product__details-area section-space-medium">
+         <div class="container">
+            <form method="post">
+            <div class="row align-items-center">
+               <div class="col-xxl-6 col-lg-6">
+                  <div class="product__details-thumb-wrapper d-sm-flex align-items-start mr-50">
+                     <div class="product__details-thumb-tab mr-20">
+                        <nav>
+                        
+                           <div class="nav nav-tabs flex-nowrap flex-sm-column" id="nav-tab" role="tablist">
+                              <button class="nav-link active" id="img-1-tab" data-bs-toggle="tab"
+                                 data-bs-target="#img-1" type="button" role="tab" aria-controls="img-1"
+                                 aria-selected="true">
+                                 <img src="/media/{{data.image}}" alt="product-sm-thumb">
+                              </button>
+                           </div>
+                           
+                        </nav>
+                     </div>
+                     <div class="product__details-thumb-tab-content">
+                        <div class="tab-content" id="productthumbcontent">
+                           <div class="tab-pane fade show active" id="img-1" role="tabpanel"
+                              aria-labelledby="img-1-tab">
+                              <div class="product__details-thumb-big w-img">
+                                 <img src="/media/{{data.image}}" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-6 col-lg-6">
+                  <div class="product__details-content pr-80">
+                     <div class="product__details-top d-sm-flex align-items-center mb-15">
+                        <div class="product__details-tag mr-10">
+                           <a href="#">Construction</a>
+                        </div>
+                        <div class="product__details-rating mr-10">
+                           <a href="#"><i class="fa-solid fa-star"></i></a>
+                           <a href="#"><i class="fa-solid fa-star"></i></a>
+                           <a href="#"><i class="fa-regular fa-star"></i></a>
+                        </div>
+                        <div class="product__details-review-count">
+                           <a href="#">10 Reviews</a>
+                        </div>
+                     </div>
+                     <h3 class="product__details-title text-capitalize">{{data.name}}</h3>
+                     <div class="product__details-price">
+                        <span class="old-price">Rs.{{data.price}}</span>
+                        <span class="new-price">Rs.{{data.price}}</span>
+                     </div>
+                     <p>{{data.discription}}</p>
+
+                     <div class="product__details-action mb-35">
+                        
+                        <div class="product__add-cart">
+                           <!-- <input type="submit" name="cartqty" class="fill-btn cart-btn"> -->
+                           <a href="/cart/{{data.id}}" class="fill-btn cart-btn">
+                              <span class="fill-btn-inner" >
+                                 <span class="fill-btn-normal">Add To Cart
+                                    <i class="fa-solid fa-basket-shopping"></i></span>
+                                 <span class="fill-btn-hover">Add To Cart
+                                    <i class="fa-solid fa-basket-shopping"></i></span>
+                              </span>
+                           </a>
+                        </div>
+                        <div class="product__add-wish">
+                           <a href="#" class="product__add-wish-btn"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                     </div>
+                     <div class="product__details-meta mb-20">
+                        <div class="sku">
+                           <span>SKU:</span>
+                           <a href="#">BO1D0MX8SJ</a>
+                        </div>
+                        <div class="categories">
+                           <span>Categories:</span> <a href="#">Milk,</a> <a href="#">Cream,</a> <a
+                              href="#">Fermented.</a>
+                        </div>
+                        <div class="tag">
+                           <span>Tags:</span> <a href="#"> Cheese,</a> <a href="#">Custard,</a> <a href="#">Frozen</a>
+                        </div>
+                     </div>
+                     <div class="product__details-share">
+                        <span>Share:</span>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </form>
+            <div class="product__details-additional-info section-space-medium-top">
+               <div class="row">
+                  <div class="col-xxl-3 col-xl-4 col-lg-4">
+                     <div class="product__details-more-tab mr-15">
+                        <nav>
+                           <div class="nav nav-tabs flex-column " id="productmoretab" role="tablist">
+                              <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-description" type="button" role="tab"
+                                 aria-controls="nav-description" aria-selected="true">Description</button>
+                              <button class="nav-link" id="nav-additional-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-additional" type="button" role="tab"
+                                 aria-controls="nav-additional" aria-selected="false">Additional Information </button>
+                              <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
+                                 aria-selected="false">Reviews (3)</button>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-xxl-9 col-xl-8 col-lg-8">
+                     <div class="product__details-more-tab-content">
+                        <div class="tab-content" id="productmorecontent">
+                           <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
+                              aria-labelledby="nav-description-tab">
+                              <div class="product__details-des">
+                                 <p>In marketing a product is an object or system made available for consumer use it is
+                                    anything that can be offered to a market to
+                                    the desire or need of a retailing, products are often referred to as merchandise,
+                                    and in manufacturing, products are bought as
+                                    materials and then sold as finished goods. A service regarded to as a type of
+                                    product. Commodities are usually raw materials
+                                    metals and agricultural products, but a commodity can also be anything wide the open
+                                    market. In project management,
+                                    the formal definition of the project deliverables</p>
+                                 <p>A product can be classified as tangible or intangible. A tangible product is a
+                                    physical object that can be perceived by touch
+                                    building, vehicle, gadget, An intangible product is a product that can only be
+                                    perceived indirectly such as an insurance policy.
+                                    can be broadly classified under intangible be durable or non durable. A product line
+                                    is "a group of products that are closely
+                                    either because they function in a similar manner, are sold to the same
+                                    customergroups.</p>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="nav-additional" role="tabpanel"
+                              aria-labelledby="nav-additional-tab">
+                              <div class="product__details-info">
+                                 <ul>
+                                    <li>
+                                       <h4>Weight</h4>
+                                       <span>2 lbs</span>
+                                    </li>
+                                    <li>
+                                       <h4>Dimensions</h4>
+                                       <span>12 × 16 × 19 in</span>
+                                    </li>
+                                    <li>
+                                       <h4>Product</h4>
+                                       <span>Purchase this product on rag-bone.com</span>
+                                    </li>
+                                    <li>
+                                       <h4>Color</h4>
+                                       <span>Gray, Black</span>
+                                    </li>
+                                    <li>
+                                       <h4>Size</h4>
+                                       <span>S, M, L, XL</span>
+                                    </li>
+                                    <li>
+                                       <h4>Model</h4>
+                                       <span>Model </span>
+                                    </li>
+                                    <li>
+                                       <h4>Shipping</h4>
+                                       <span>Standard shipping: $5,95</span>
+                                    </li>
+                                    <li>
+                                       <h4>Care Info</h4>
+                                       <span>Machine Wash up to 40ºC/86ºF Gentle Cycle</span>
+                                    </li>
+                                    <li>
+                                       <h4>Brand</h4>
+                                       <span>Kazen</span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+                              <div class="product__details-review">
+                                 <h3 class="comments-title">03 reviews for “Wide Cotton Tunic extreme hammer”</h3>
+                                 <div class="latest-comments mb-50">
+                                    <ul>
+                                       <li>
+                                          {% for x in review %}
+                                          <div class="comments-box d-flex">
+                                             <div class="comments-avatar mr-10">
+                                                <img src="{% static 'assets/imgs/user/user-01.png' %}" alt="">
+                                             </div>
+                                             <div class="comments-text">
+                                                <div
+                                                   class="comments-top d-sm-flex align-items-start justify-content-between mb-5">
+                                                   <div class="avatar-name">
+                                                      <h5>{{x.rname}}</h5>
+                                                      <div class="comments-date">
+                                                         <span>March 27, 2018 9:51 am</span>
+                                                      </div>
+                                                   </div>
+                                                   <div class="user-rating">
+                                                      <div class="stars">
+                                                         {% for _ in "12345"|make_list %}
+                                                             {% if forloop.counter <= avg_rating %}
+                                                                 ★ <!-- Filled star -->
+                                                             {% else %}
+                                                                 ☆ <!-- Empty star -->
+                                                             {% endif %}
+                                                         {% endfor %}
+                                                     </div>
+                                                   </div>
+                                                </div>
+                                                <p>{{x.review}}</p>
+                                             </div>
+                                          </div>
+                                          {% endfor %}
+                                       </li>
+                                      
+                                    </ul>
+                                 </div>
+                                 <div class="product__details-comment section-space-medium-bottom">
+                                    <div class="comment-title mb-20">
+                                       <h3>Add a review</h3>
+                                       <p>Your email address will not be published. Required fields are marked *</p>
+                                    </div>   
+                                    <div class="comment-input-box">
+                                       <form method="post">
+                                          {% csrf_token %}
+                                          <div class="row">
+                                             <div class="comment-rating mb-20">
+                                                <!-- <span>Overall ratings</span> -->
+                                                <fieldset class="rating">
+                                                   <input type="radio" id="star5" name="rating" value="5" />
+                                                   <label for="star5"></label>
+                                                   <input type="radio" id="star4" name="rating" value="4" />
+                                                   <label for="star4"></label>
+                                                   <input type="radio" id="star3" name="rating" value="3" />
+                                                   <label for="star3"></label>
+                                                   <input type="radio" id="star2" name="rating" value="2" />
+                                                   <label for="star2"></label>
+                                                   <input type="radio" id="star1" name="rating" value="1" />
+                                                   <label for="star1"></label>
+                                               </fieldset>
+                                                <!-- <ul name="rating">
+                                                   <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                   <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                   <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                   <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                   <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul> -->
+                                             </div>
+                                             <div class="col-xxl-12">
+                                                <div class="comment-input">
+                                                   <textarea placeholder="Your review" name="review"></textarea>
+                                                </div>
+                                             </div>
+                                             <div class="col-xxl-6">
+                                                <div class="comment-input">
+                                                   <input type="text" placeholder="Your Name*" name="rname">
+                                                </div>
+                                             </div>
+                                             <div class="col-xxl-6">
+                                                <div class="comment-input">
+                                                   <input type="email" placeholder="Your Email*" name="remail">
+                                                </div>
+                                             </div>
+                                             <div class="col-xxl-12">
+                                                <div class="comment-agree d-flex align-items-center mb-25">
+                                                   <input class="z-check-input" type="checkbox" id="z-agree">
+                                                   <label class="z-check-label" for="z-agree">Save my name, email, and
+                                                      website in this browser for the next time I comment.</label>
+                                                </div>
+                                             </div>
+                                             <div class="col-xxl-12">
+                                                <div class="comment-submit">
+                                                   <button type="submit" class="fill-btn" name="addreview">
+                                                      <span class="fill-btn-inner">
+                                                         <span class="fill-btn-normal">submit now</span>
+                                                         <span class="fill-btn-hover">submit now</span>
+                                                      </span>
+                                                   </button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Product details area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+ {% include 'footer1.html' %}
+</body>
+
+
+<!-- Mirrored from gramentheme.com/html/addina/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 03:00:45 GMT -->
+</html>

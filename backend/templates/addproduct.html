@@ -1,0 +1,64 @@
+{% include 'headerback.html' %}
+
+
+    <table cellpadding="0" height="400px">
+
+
+              <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <tr>
+                  <td>Select category</td>
+                  <td>
+                    <select name="{{frm.pcategory.name}}">
+                      {% for x in data %}
+                        <option>{{x.category}}</option>
+                      {% endfor%}
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Select subcategory</td>
+                  <td>
+                    <select name="{{frm.psubcategory.name}}">
+                      {% for x in subcate %}
+                        <option>{{x.subitem}}</option>
+                      {% endfor%}
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>
+                    <input type="text" name="{{frm.name.name}}">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Discription</td>
+                  <td><input type="text" name="{{frm.discription.name}}"></td>
+                </tr>
+                <tr>
+                  <td>Price</td>
+                  <td><input type="text" name="{{frm.price.name}}"></td>
+                </tr>
+                <tr>
+                  <td>Quantity</td>
+                  <td><input type="text" name="{{frm.quantity.name}}"></td>
+                  <!-- <button class="cart-minus"><i class="far fa-minus"></i></button>
+                  <input class="cart-input" type="text" value="1">
+                  <button class="cart-plus"><i class="far fa-plus"></i></button> -->
+                </tr>
+                <tr>
+                  <td>Discount</td>
+                  <td><input type="text" name="{{frm.discount.name}}"></td>
+                </tr>
+                <tr>
+                  <td>Image</td>
+                  <td><input type="file" name="{{frm.image.name}}"></td>
+                </tr>
+                <div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+    </table>
+       
+{% include 'footerback.html' %}

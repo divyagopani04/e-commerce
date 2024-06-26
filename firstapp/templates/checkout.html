@@ -1,0 +1,520 @@
+{% load static %}
+{% include 'header1.html' %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from gramentheme.com/html/addina/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 03:00:45 GMT -->
+
+
+<body>
+
+   <!-- preloader start -->
+   <div id="preloader">
+      <div class="bd-loader-inner">
+         <div class="bd-loader">
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+         </div>
+      </div>
+   </div>
+   <!-- preloader start -->
+
+   <!-- Back to top start -->
+   <div class="backtotop-wrap cursor-pointer">
+      <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- search area start -->
+   <div class="df-search-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="df-search-form">
+                  <div class="df-search-close text-center mb-20">
+                     <button class="df-search-close-btn df-search-close-btn"></button>
+                  </div>
+                  <form action="#">
+                     <div class="df-search-input mb-10">
+                        <input type="text" placeholder="Search for product...">
+                        <button type="submit"><i class="flaticon-search-1"></i></button>
+                     </div>
+                     <div class="df-search-category">
+                        <span>Search by : </span>
+                        <a href="#">Healthline, </a>
+                        <a href="#">COVID-19, </a>
+                        <a href="#">Surgery, </a>
+                        <a href="#">Surgeon, </a>
+                        <a href="#">Medical research</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- search area end -->
+
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="/">
+                        <img src="{% static 'assets/imgs/logo/logo-white.svg' %}" alt="logo not found">
+                     </a>
+                  </div>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="offcanvas__search mb-25">
+                  <form action="#">
+                     <input type="text" placeholder="What are you searching for?">
+                     <button type="submit"><i class="far fa-search"></i></button>
+                  </form>
+               </div>
+               <div class="mobile-menu fix mb-40"></div>
+               <div class="offcanvas__contact mt-30 mb-20">
+                  <h4>Contact Info</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank"
+                              href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A,
+                              Mirnada City Tower, NYC</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+088889797697">+088889797697</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+012-345-6789"><span class="mailto:support@mail.com">support@mail.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+  
+   <!-- Body main wrapper start -->
+   <main>
+
+      <!-- Breadcrumb area start  -->
+      <div class="breadcrumb__area theme-bg-1 p-relative z-index-11 pt-95 pb-95">
+         <div class="breadcrumb__thumb" data-background="assets/imgs/bg/breadcrumb-bg.jpg"></div>
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__wrapper text-center">
+                     <h2 class="breadcrumb__title">Checkout</h2>
+                     <div class="breadcrumb__menu">
+                        <nav>
+                           <ul>
+                              <li><span><a href="/">Home</a></span></li>
+                              <li><span>checkout</span></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Breadcrumb area start  -->
+
+      <!-- checkout-area start -->
+      <section class="checkout-area section-space">
+         <div class="container">
+            <form method="post">
+               {% csrf_token %}
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="checkbox-form">
+                        <h3 class="mb-15">Billing Details</h3>
+                        <div class="row g-5">
+                           <div class="col-md-12">
+                              <div class="country-select">
+                                 <label>Country <span class="required">*</span></label>
+                                 <select name="bcountry">
+                                    <option value="United States">United States</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="India">India</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>First Name <span class="required">*</span></label>
+                                 <input type="text" placeholder="" name="bfirstname">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>Last Name <span class="required">*</span></label>
+                                 <input type="text" placeholder="" name="blastname">
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="checkout-form-list">
+                                 <label>Company Name</label>
+                                 <input type="text" placeholder="" name="bcompanyname">
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="checkout-form-list">
+                                 <label>Address <span class="required">*</span></label>
+                                 <input type="text" placeholder="Street address" name="baddress">
+                              </div>
+                           </div>
+                           
+                           <div class="col-md-12">
+                              <div class="checkout-form-list">
+                                 <label>Town / City <span class="required">*</span></label>
+                                 <input type="text" placeholder="Town / City" name="bcity">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>State / County <span class="required">*</span></label>
+                                 <input type="text" placeholder="" name="bstate">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>Postcode / Zip <span class="required">*</span></label>
+                                 <input type="text" placeholder="Postcode / Zip" name="bzipcode">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>Email Address <span class="required">*</span></label>
+                                 <input type="email" placeholder="" name="bemail">
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="checkout-form-list">
+                                 <label>Phone <span class="required">*</span></label>
+                                 <input type="text" placeholder="" name="bphone">
+                              </div>
+                           </div>
+                           {% comment %} <div class="col-md-12">
+                              <div class="checkout-form-list create-acc d-flex align-content-center">
+                                 <input class="e-check-input" id="xbox" type="checkbox">
+                                 <label class="mb-0">Create an account?</label>
+                              </div>
+                              <div id="cbox_info" class="checkout-form-list create-account">
+                                 <p>Create an account by entering the information below. If you are a
+                                    returning
+                                    customer please login at the top of the page.</p>
+                                 <label>Account password <span class="required">*</span></label>
+                                 <input type="password" placeholder="password">
+                              </div>
+                           </div> {% endcomment %}
+                        </div>
+                        <div class="different-address">
+                           <div class="ship-different-title">
+                              <label>Ship to a different address?</label>
+                              <input class="e-check-input" id="ship-box" type="checkbox">
+                           </div>
+                           <div id="ship-box-info">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="country-select">
+                                       <label>Country <span class="required">*</span></label>
+                                       <select>
+                                          <option value="volvo">Bangladesh</option>
+                                          <option value="saab">Algeria</option>
+                                          <option value="mercedes">Afghanistan</option>
+                                          <option value="audi">Ghana</option>
+                                          <option value="audi2">Albania</option>
+                                          <option value="audi3">Bahrain</option>
+                                          <option value="audi4">Colombia</option>
+                                          <option value="audi5">Dominican Republic</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>First Name <span class="required">*</span></label>
+                                       <input type="text" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>Last Name <span class="required">*</span></label>
+                                       <input type="text" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                       <label>Company Name</label>
+                                       <input type="text" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                       <label>Address <span class="required">*</span></label>
+                                       <input type="text" placeholder="Street address">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                       <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                       <label>Town / City <span class="required">*</span></label>
+                                       <input type="text" placeholder="Town / City">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>State / County <span class="required">*</span></label>
+                                       <input type="text" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>Postcode / Zip <span class="required">*</span></label>
+                                       <input type="text" placeholder="Postcode / Zip">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>Email Address <span class="required">*</span></label>
+                                       <input type="email" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                       <label>Phone <span class="required">*</span></label>
+                                       <input type="text" placeholder="Postcode / Zip">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="order-notes">
+                              <div class="checkout-form-list">
+                                 <label>Order Notes</label>
+                                 <textarea id="checkout-mess" cols="30" rows="10"
+                                    placeholder="Notes about your order, e.g. special notes for delivery." name="bmessage"></textarea>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="your-order">
+                        <h3>Your order</h3>
+                        <div class="your-order-table table-responsive">
+                           <table>
+                              <thead>
+                                 <tr>
+                                    <th class="product-name">Product</th>
+                                    <th class="product-total">Total</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 {% for x in mydata %}
+                                 <tr class="cart_item">
+                                    <td class="product-name">
+                                       {{x.product}}<strong class="product-quantity"> × {{x.quantity}}</strong>
+                                    </td>
+                                    <td class="product-total">
+                                       <span class="amount">{{x.total}}</span>
+                                    </td>
+                                 </tr>
+                                 {% endfor %}
+                                 
+                              </tbody>
+                              <tfoot>
+                                 <tr class="cart-subtotal">
+                                    <th>Cart Subtotal</th>
+                                    <td><span class="amount">{{subtotal}}</span></td>
+                                 </tr>
+                                 <tr class="shipping">
+                                    <th>Shipping</th>
+                                    <td>
+                                       <ul>
+                                          <li>
+                                             <input type="radio">
+                                             <label>
+                                                Flat Rate: <span class="amount">$7.00</span>
+                                             </label>
+                                          </li>
+                                          <li>
+                                             <input type="radio">
+                                             <label>Free Shipping:</label>
+                                          </li>
+                                       </ul>
+                                    </td>
+                                 </tr>
+                                 <tr class="order-total">
+                                    <th>Order Total</th>
+                                    <td><strong><span class="amount">{{subtotal}}</span></strong>
+                                    </td>
+                                 </tr>
+                              </tfoot>
+                           </table>
+                        </div>
+
+                        <div class="payment-method">
+                           <div class="accordion" id="checkoutAccordion">
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="checkoutOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#bankOne" aria-expanded="true" aria-controls="bankOne">
+                                       Direct Bank Transfer
+                                    </button>
+                                 </h2>
+                                 <div id="bankOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="checkoutOne" data-bs-parent="#checkoutAccordion">
+                                    <div class="accordion-body">
+                                       Make your payment directly into our bank account. Please use your
+                                       Order ID
+                                       as the payment reference. Your order won’t be shipped until the
+                                       funds have
+                                       cleared in our account.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="paymentTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#payment" aria-expanded="false" aria-controls="payment">
+                                       Cheque Payment
+                                    </button>
+                                 </h2>
+                                 <div id="payment" class="accordion-collapse collapse" aria-labelledby="paymentTwo"
+                                    data-bs-parent="#checkoutAccordion">
+                                    <div class="accordion-body">
+                                       Please send your cheque to Store Name, Store Street, Store Town,
+                                       Store
+                                       State / County, Store
+                                       Postcode.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="paypalThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#paypal" aria-expanded="false" aria-controls="paypal">
+                                       PayPal
+                                    </button>
+                                 </h2>
+                                 <div id="paypal" class="accordion-collapse collapse" aria-labelledby="paypalThree"
+                                    data-bs-parent="#checkoutAccordion">
+                                    <div class="accordion-body">
+                                       Pay via PayPal; you can pay with your credit card if you don’t have
+                                       a
+                                       PayPal account.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <!-- <h1>Heloo!!!!!!!!{{ currency }}</h1> -->
+            <div class="order-button-payment mt-20">
+               <button class="btn" id="pay-btn"><h3>Payment</h3></button>
+            </div>
+         </div>
+      </section>
+      <!-- checkout-area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+ {% include 'footer1.html' %}
+</body>
+
+
+<!-- Razorpay's Javascript code. -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+	var options = {
+	
+	// Enter the Key ID generated from the Dashboard
+	key: "{{ razorpay_merchant_key }}", 
+	
+	// Amount is in currency subunits.
+	// Default currency is INR. Hence, 
+	// 50000 refers to 50000 paise
+	amount: "{{ razorpay_amount }}", 
+	currency: "{{ currency }}",
+	
+	// Your/store name.
+	name: "Dj Razorpay", 
+	
+	// Pass the `id` obtained in the response of Step 1
+	order_id: "{{ razorpay_order_id }}", 
+	callback_url: "{{ callback_url }}",
+	};
+	
+	// initialise razorpay with the options.
+	var rzp1 = new Razorpay(options);
+	
+	// add event listener to the payment button.
+	document.getElementById("pay-btn").onclick = function (e) {
+      alert()
+	rzp1.open();
+	e.preventDefault();
+	};
+</script>
+
+
+<!-- Mirrored from gramentheme.com/html/addina/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 03:00:45 GMT -->
+</html>

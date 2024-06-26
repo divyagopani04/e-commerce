@@ -1,0 +1,64 @@
+{% include 'headerback.html' %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Quick Example</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">name</label>
+                    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter name" name="name" value="{{data.name}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">discription</label>
+                    <input type="discription" placeholder="Enter discription" name="discription" value="{{data.discription}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">price</label>
+                    <input type="price" placeholder="Enter price" name="price" value="{{data.price}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">quantity</label>
+                    <input type="quantity" placeholder="Enter quantity" name="quantity" value="{{data.quantity}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">discount</label>
+                    <input type="discount" placeholder="Enter discount" name="discount" value="{{data.discount}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">image</label>
+                    <img src="/media/{{data.image}}" height="100px" width="100px">
+                    <input type="file"  name="image">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+{% include 'footerback.html' %}

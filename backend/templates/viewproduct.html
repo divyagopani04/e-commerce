@@ -1,0 +1,79 @@
+{% load static %}
+{% include 'headerback.html' %}
+ 
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+   
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body ">
+                <table id="example2" class="table table-bordered table-hover">
+                  <table class="border border-dark view_table" style="border-width: 1px;" cellspacing="0" align="center" cellpadding="20px">
+                    <tr>
+                        <th>id</th>
+                        <!-- <th>category</th>
+                        <th>subcategory</th> -->
+                        <th>name</th>
+                        <th>discription</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>discount</th>
+                        <th>image</th>
+                        <th>delete</th>
+                        <th>update</th>
+                        <th>status</th>
+                        <th>change status</th>
+                    </tr>
+                    {% for x in data %}
+        
+                        <tr>
+                            <td>{{x.id}}</td>
+                            <!-- {% for x in category %}
+                            <td>{{x.category}}</td>
+                            {% endfor %}
+                            {% for x in subcate %}
+                            <td>{{x.subcategory}}</td>
+                            {% endfor %} -->
+                            <td>{{x.name}}</td>
+                            <td>{{x.discription}}</td>                            
+                            <td>{{x.price}}</td>                            
+                            <td>{{x.quantity}}</td>                            
+                            <td>{{x.discount}}</td>                            
+                            <td><img src="/media/{{x.image}}" height="100px" width="100px"></td>                            
+                            <td><a href="/deleteproduct/{{x.id}}">delete</a></td>
+                            <td><a href="/updateproduct/{{x.id}}">update</a></td>
+                            <td>{% if x.pstatus == '0' %} Disabled {% else %} Enabled {% endif %}</td>
+                            <td><a href="/pchange/{{x.id}}">change status</a></td>
+                        </tr>
+        
+                    {% endfor %}
+                </table>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+            
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+{% include 'footerback.html' %}

@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'jquery-3.7.1.min.js' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+    <div class="container">
+        <h1>Create Profile</h1>
+        <h5></h5>
+    </div>
+    <form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        <input type="text" id="name" placeholder="Full Name" name="name">
+    </div>
+    <div>
+        <input type="text" id="email" placeholder="Email" name="email">
+    </div>
+    <div>
+        <input type="text" id="password" placeholder="Password" name="password">
+    </div>
+    <div>
+        <input type="text" id="phone" placeholder="Phone" name="phone">
+    </div>
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            type: "POST",
+            url: "/create",
+            data: {
+                full_name: $("#full_name").val(),
+                email: $("#email").val(),
+                password: $("#password").val(),
+                phone: $("#phone").val(),
+            },
+            success: function (data) {
+                ("h5").html(data)
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
