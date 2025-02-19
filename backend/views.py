@@ -7,6 +7,7 @@ from backend.models import maincategory
 from backend.models import subcategory
 from backend.models import productdata
 from backend.models import imagedata 
+from django.core import serializers
 
 
 # Create your views here.
@@ -311,6 +312,17 @@ def pchange(request,id):
     mydata.save()
 
     return redirect('/viewproduct')
+
+
+
+def allreguser(request):
+
+    # data = reg.objects.all().values()
+    json_data = {'name':'divya'}
+    SomeModel_json = serializers.serialize("json", reg.objects.all())
+    data = {"SomeModel_json": SomeModel_json}
+    return JsonResponse({'data':data})
+
 
 
 

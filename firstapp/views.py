@@ -150,7 +150,7 @@ def loginuser(request):
 
             admin = mydata.get()
             request.session['username'] = admin.id
-            # request.session['userfname'] = admin.fname
+            request.session['userfname'] = admin.fname
             # print(request.session['userfname'])
 
             return redirect('/')
@@ -162,6 +162,7 @@ def loginuser(request):
 def logoutuser(request):
 
     del request.session['username']
+    del request.session['userfname']
     return redirect('/')
 
 def index(request):
@@ -266,6 +267,7 @@ def update_quantity(request):
         cart_item.save()
         return JsonResponse({'quantity': cart_item.quantity, 'total': cart_item.total})
 
+    
     return JsonResponse({'error': 'Invalid request'}, status=400)
 
 def viewcart(request):
@@ -545,3 +547,5 @@ def delete_orderlist(request,id):
     mydata.delete()
 
     return redirect('/orderlist')
+
+

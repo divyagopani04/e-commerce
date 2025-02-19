@@ -83,7 +83,7 @@ from backend.views import subcatechange
 from backend.views import addproduct
 from backend.views import viewproduct
 from backend.views import deleteproduct
-from backend.views import updateproduct
+from backend.views import updateproduct,allreguser
 from backend.views import pchange
 
 from backend import views
@@ -156,6 +156,7 @@ urlpatterns = [
     path('updateproduct/<int:id>',updateproduct),
     path('deleteproduct/<int:id>',deleteproduct),
     path('pchange/<int:id>',pchange),
+    path('allreguser/',allreguser),
 
     path('update_quantity/', update_quantity, name='update_quantity'),
 
